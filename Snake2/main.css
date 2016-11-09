@@ -1,8 +1,41 @@
 body {
-	background-color: #E490FF;
 	text-align: center;
 	margin: 100px 0;
 }
 canvas {
 	background-color: #363AA1;
+}
+.play-btn, .restart-btn {
+	width: 230px;
+	height: 80px;
+	left: calc((100% - 230px) / 2);
+	font-size: 30px;
+	position: absolute;
+	display: inline-block;
+	cursor: pointer;
+	background-color: rgba(157, 157, 157, 0.5);
+	color: #fff;
+	border: none;
+	transition: all 0.4s ease;
+}
+.play-btn {
+	top: 281px;
+}
+.restart-btn {
+	top: 180px;
+	visibility: hidden;
+}
+.play-btn:hover, .restart-btn:hover {
+	width: 482px;
+	height: 80px;
+	left: calc((100% - 482px) / 2);
+}
+.play-btn:hover {
+	top: 281px;
+}
+.restart-btn:hover {
+	top: 180px;
+}
+.play-btn:focus, .restart-btn:focus {
+	outline: none;
 }
